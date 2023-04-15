@@ -131,3 +131,37 @@
 @media screen and (min-width: 1600px){
   
 }
+
+/* CLASSES UTILITÁRIAS */
+
+.gn-text-green {
+  color: #2CCB69;
+}
+
+.gn-text-dark {
+  color: #4D4C4C;
+}
+
+.gn-text-light {
+  color: #BCBCBC;
+}
+
+.gn-text-black {
+  color: #000;
+}
+
+.gn-bg-green {
+  background-color: #2CCB69;
+}
+
+.gn-bg-dark {
+  background-color: #4D4C4C;
+}
+
+.gn-bg-light {
+  background-color: #BCBCBC;
+}
+
+.gn-bg-black {
+  background-color: #000;
+}
