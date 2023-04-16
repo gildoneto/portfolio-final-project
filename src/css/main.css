@@ -65,10 +65,6 @@ p {
     transition: all 0.2s ease-out;
   }
 
-  .gn-btn-contact:hover {
-    background-position-y: -45px;
-  }
-
   .gn-contact-info {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 85% 80%, 0 80%);
     width: 245px;
@@ -78,6 +74,7 @@ p {
     bottom: 100px;
     right: 65px;
     z-index: 200;
+    display: none;
   }
 
   .gn-contact-info p {
@@ -213,4 +210,14 @@ p {
 
 .gn-bg-black {
   background-color: #000;
+}
+
+/* CLASSES COMPORTAMENTO/ESTADO */
+
+.gn-is-open {
+  display: block;
+}
+
+.gn-change-icon {
+  background-position-y: -45px;
 }
