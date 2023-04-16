@@ -12,12 +12,28 @@ p {
 
 @media screen and (min-width: 320px){
 
-  .gn-page-wrapper {
+  .gn-page-wrapper, .gn-preloader {
     width: 100%;
     height: 100vh;
     display: block;
     background-color: #1C1C1C;
     border: 30px solid #000;
+  }
+
+  .gn-preloader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .gn-preloader-inner {
+    margin-top: -45px;
   }
 
   .gn-topbar {
@@ -214,6 +230,45 @@ p {
   background-color: #000;
 }
 
+.gn-mar-15 {
+  margin: 15px;
+}
+
+.gn-mar-top-15 {
+  margin-top: 15px;
+}
+
+.gn-mar-right-15 {
+  margin-right: 15px;
+}
+
+.gn-mar-bottom-15 {
+  margin-bottom: 15px;
+}
+
+.gn-mar-left-15 {
+  margin-left: 15px;
+}
+
+.gn-pad-15 {
+  padding: 15px;
+}
+
+.gn-pad-top-15 {
+  padding-top: 15px;
+}
+
+.gn-pad-right-15 {
+  padding-right: 15px;
+}
+
+.gn-pad-bottom-15 {
+  padding-bottom: 15px;
+}
+
+.gn-pad-left-15 {
+  padding-left: 15px;
+}
 /* CLASSES COMPORTAMENTO/ESTADO */
 
 .gn-is-open {
