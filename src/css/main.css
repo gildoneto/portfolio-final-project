@@ -317,6 +317,7 @@ p {
   border: none;
   transition: all 0.2s ease-out;
   cursor: pointer;
+  text-transform: lowercase;
 }
 
 .gn-btn-small {
