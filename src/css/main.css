@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px){
@@ -61,6 +67,44 @@
 
   .gn-btn-contact:hover {
     background-position-y: -45px;
+  }
+
+  .gn-contact-info {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 85% 80%, 0 80%);
+    width: 245px;
+    height: 210px;
+    padding: 25px;
+    position: fixed;
+    bottom: 100px;
+    right: 65px;
+    z-index: 200;
+  }
+
+  .gn-contact-info p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gn-social-links {
+    width: 100%;
+    height: 45px;
+    display: block;
+    position: relative;
+    left: -12px;
+    margin-top: 7px;
+  }
+
+  .gn-social {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+  }
+
+  .gn-social > img {
+    width: 20px;
+    height: auto;
+    display: block;
+    margin: 13px auto 0;
   }
 
 }
@@ -133,6 +177,11 @@
 }
 
 /* CLASSES UTILITÁRIAS */
+
+.gn-title {
+  font-family: 'Abril Fatface', serif;
+  font-weight: normal;
+}
 
 .gn-text-green {
   color: #2CCB69;
