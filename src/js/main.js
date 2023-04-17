@@ -30,3 +30,14 @@ toggleModal.forEach((element) => {
     modalOrcamento.classList.toggle('gn-slide-top-in');
   });
 });
+
+// Animando elements on scroll com waypoints
+const myScrollDown = document.querySelector('.gn-scroll-down');
+
+const waypoint = new Waypoint({
+  element: myScrollDown,
+  handler: () => {
+    myScrollDown.classList.toggle('gn-fade-out');
+  },
+  offset: '80%',
+});
