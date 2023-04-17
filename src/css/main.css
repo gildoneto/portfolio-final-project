@@ -6,7 +6,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+p, label {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -113,7 +113,7 @@ p {
     margin: 0 auto;
     z-index: 1200;
   }
-  .gn-modal-header {
+  .gn-modal-header, .gn-modal-body, .gn-form {
     width: 100%;
     display: table;
     position: relative;
@@ -132,6 +132,30 @@ p {
     right: -15px;
     border: none;
     background-color: #2F2F2F;
+  }
+
+  .gn-field, .gn-textarea {
+    width: 100%;
+    background-color: #2F2F2F;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-indent: 15px;
+  }
+
+  .gn-field {
+    height: 45px;
+  }
+
+  .gn-textarea {
+    
+  }
+
+  .gn-form label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: inline-block;
   }
 
   .gn-topbar {
@@ -362,6 +386,11 @@ p {
   transition: all 0.2s ease-out;
   cursor: pointer;
   text-transform: lowercase;
+}
+
+.gn-btn-block {
+  display: block;
+  width: 100%;
 }
 
 .gn-btn-small {
