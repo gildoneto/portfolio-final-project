@@ -252,7 +252,7 @@ p, label {
     margin: 13px auto 0;
   }
 
-  /*  HOME */
+  /*  HOME -  */
 
   .gn-display-text {
     margin-top: 10%;
@@ -312,6 +312,51 @@ p, label {
     background-color: #000;
     transform-origin: top center;
     animation: lineDown 1.5s ease-out infinite;
+  }
+
+  /* HOME - PORTFOLIO  */
+
+  .gn-portfolio-navigator {
+    width: 145px;
+    height: 400px;
+    display: table;
+    background-color: red;
+    position: absolute;
+    left: 15px;
+    top: 26vh;
+  }
+
+  .gn-item-counter {
+    width: 100%;
+    height: 90px;
+    display: block;
+    background-color: blue;
+    margin-bottom: 60px;
+  }
+
+  .gn-item-navigator {
+    width: 100%;
+    display: table;
+    background-color: greenyellow;
+  }
+
+  .gn-item-navigator a {
+    width: 20px;
+    height: 1px;
+    background-color: purple;
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .gn-item-navigator a:last-child {
+    margin-bottom: 30px;
+  }
+
+  .gn-portfolio-next-prev {
+    width: 100%;
+    height: 45px;
+    background-color: deeppink;
+    display: block;
   }
 }
 
@@ -528,11 +573,17 @@ p, label {
 
 .gn-full-height {
   height: 100vh;
+  position: relative;
 }
 
 .gn-first-section {
   height: calc(100vh - 30px);
 }
+
+.gn-no-padding {
+  padding: 0 !important;
+}
+
 /* CLASSES COMPORTAMENTO/ESTADO */
 
 .gn-is-open {
